@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en_US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- sailfish-silica-icontextswitch.qdoc -->
+  <title>IconTextSwitch QML Type | Sailfish Silica 1.0</title>
+  <link rel="stylesheet" type="text/css" href="style/offline.css" />
+</head>
+<body>
+<div class="header" id="qtdocheader">
+  <div class="content"> 
+    <a href="index.html" class="qtref"><span>Sailfish Silica Reference Documentation</span></a>
+  </div>
+  <div class="breadcrumb toolblock">
+    <ul>
+      <li class="first"><a href="index.html">Home</a></li>
+      <!--  Breadcrumbs go here -->
+    </ul>
+  </div>
+</div>
+<div class="content mainContent">
+<div class="sidebar">
+<div class="toc">
+<h3><a name="toc">Contents</a></h3>
+<ul>
+<li class="level1"><a href="#properties">Properties</a></li>
+<li class="level1"><a href="#details">Detailed Description</a></li>
+</ul>
+</div>
+<div class="sidebar-content" id="sidebar-content"></div></div>
+<h1 class="title">IconTextSwitch QML Type</h1>
+<span class="subtitle"></span>
+<!-- $$$IconTextSwitch-brief -->
+<p>A toggle button with a label and an icon <a href="#details">More...</a></p>
+<!-- @@@IconTextSwitch -->
+<div class="table"><table class="alignedsummary">
+<tr><td class="memItemLeft rightAlign topAlign"> Import Statement:</td><td class="memItemRight bottomAlign"> import Sailfish.Silica 1.0</td></tr><tr><td class="memItemLeft rightAlign topAlign"> Inherits:</td><td class="memItemRight bottomAlign"> <p><a href="qml-sailfishsilica-sailfish-silica-textswitch.html">TextSwitch</a></p>
+</td></tr></table></div><ul>
+<li><a href="qml-sailfishsilica-sailfish-silica-icontextswitch-members.html">List of all members, including inherited members</a></li>
+</ul>
+<a name="properties"></a>
+<h2 id="properties">Properties</h2>
+<ul>
+<li class="fn"><b><b><a href="qml-sailfishsilica-sailfish-silica-icontextswitch.html#icon-prop">icon</a></b></b> : Image</li>
+</ul>
+<!-- $$$IconTextSwitch-description -->
+<a name="details"></a>
+<h2 id="details">Detailed Description</h2>
+</p>
+<p class="centerAlign"><img src="images/sailfish-silica-icontextswitch.png" alt="" /></p><p>The <a href="qml-sailfishsilica-sailfish-silica-icontextswitch.html">IconTextSwitch</a> type provides a Sailfish-styled toggle button with a textual label and an icon. IconTextSwitches are commonly used in settings pages. See inherited <a href="qml-sailfishsilica-sailfish-silica-textswitch.html">TextSwitch</a> component for a more comprehensive API.</p>
+<p>Here is a simple <a href="qml-sailfishsilica-sailfish-silica-icontextswitch.html">IconTextSwitch</a>:</p>
+<pre class="qml"> import QtQuick 2.2
+ import Sailfish.Silica 1.0
+
+ <span class="type"><a href="qml-sailfishsilica-sailfish-silica-icontextswitch.html">IconTextSwitch</a></span> {
+     <span class="name">text</span>: <span class="string">&quot;Location&quot;</span>
+     <span class="name">icon</span>.source: <span class="string">&quot;image://theme/icon-m-gps&quot;</span>
+     <span class="name">description</span>: <span class="string">&quot;Allow applications to use GPS for mobile networks to pin point your location&quot;</span>
+     <span class="name">onCheckedChanged</span>: <span class="name">locationSettings</span>.<span class="name">locationEnabled</span> <span class="operator">=</span> <span class="name">checked</span>
+ }</pre>
+<p><b>See also </b><a href="qml-sailfishsilica-sailfish-silica-textswitch.html">TextSwitch</a>, <a href="qml-sailfishsilica-sailfish-silica-switch.html">Switch</a>, and <a href="qml-sailfishsilica-sailfish-silica-label.html">Label</a>.</p>
+<!-- @@@IconTextSwitch -->
+<h2>Property Documentation</h2>
+<!-- $$$icon -->
+<div class="qmlitem"><div class="qmlproto">
+<div class="table"><table class="qmlname">
+<tr valign="top" class="odd" id="icon-prop">
+<td class="tblQmlPropNode"><p>
+<a name="icon-prop"></a><span class="name">icon</span> : <span class="type">Image</span></p></td></tr>
+</table></div>
+</div><div class="qmldoc"><p>The image shown within the <a href="qml-sailfishsilica-sailfish-silica-icontextswitch.html">IconTextSwitch</a>.</p>
+</div></div><!-- @@@icon -->
+<br/>
+  <div class="ft">
+    <span></span>
+  </div>
+</div> 
+<div class="footer">
+  <p>
+     <acronym title="Copyright">&copy;</acronym> 2012-2015 Jolla OY
+  <p>
+     All other trademarks are property of their respective owners.
+  <br />
+    This document may be used under the terms of the <a href="http://www.gnu.org/licenses/fdl.html">GNU
+    Free Documentation License version 1.3</a>
+    as published by the Free Software Foundation.</p>
+</div>
+</body>
+</html>
